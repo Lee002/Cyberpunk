@@ -5,19 +5,26 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
+
+
+    #region Singleton
     public static PlayerController instance;
+    [SerializeField] private Player player_data;
+    void Awake()
+    {
+        instance = this;
+        player_data = new Player();
+    }
+    #endregion
+
     [SerializeField] private Animator animator;
     [HideInInspector] public bool reachedPosition;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private LayerMask layerToWalkOn;
-
-    void Awake()
-    {
-        instance = this;
-    }
-
     [HideInInspector]public PlayerMovements playerMovements;
 
+    private Vector3 previousPosition;
+    public float curSpeed;
 
     void Start()
     {
@@ -31,21 +38,45 @@ public class PlayerController : MonoBehaviour
             agent.destination = GetPositionUnderCursor();
         }
 
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            if(player_data.State != State.Crouched)
+            {
+                player_data.State = State.Crouched;
+
+            }
+            else
+            {
+                player_data.State = State.Idle;
+            }
+
+
+        }
         Animation();
-        
+
+
     }
 
     private void Animation()
     {
-        animator.SetBool("walking", reachedPosition);
+        //animator.SetBool("walking", reachedPosition);
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
+            //Player walking
             reachedPosition = false;
+            player_data.State = State.Idle;
+            animator.SetFloat("Speed", agent.remainingDistance);
         }
         else
         {
+            //Player stopped
             reachedPosition = true;
+            player_data.State = State.Walking;
+            
+            animator.SetFloat("Speed", agent.remainingDistance );
         }
+
+
     }
 
     Vector3 GetPositionUnderCursor()
