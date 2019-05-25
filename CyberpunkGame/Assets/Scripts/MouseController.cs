@@ -20,15 +20,7 @@ public class MouseController : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Debug.Log(hit.transform.tag);
-            if (hit.transform.tag == "Floor")
-            {
-                if(Input.GetMouseButtonDown(0))
-                {
-                    //player.playerMovements.MoveToPosition(hit.point);
 
-                }
-
-            }
         }
 
     }

@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 4327144084732578}
   - component: {fileID: 33642626604321158}
   - component: {fileID: 23502500370455974}
-  - component: {fileID: 64906833503721998}
+  - component: {fileID: 53810466034752568}
   m_Layer: 9
   m_Name: PTK_Cuboid_5
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4327144084732578
 Transform:
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1078868141710040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 10.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -78,8 +78,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64906833503721998
-MeshCollider:
+--- !u!65 &53810466034752568
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,7 +88,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 6cfb80454aee73840b7e1a3bb551ea1b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 4.9999995, y: 0.1000002, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}

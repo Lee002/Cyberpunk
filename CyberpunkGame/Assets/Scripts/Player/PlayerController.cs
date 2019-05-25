@@ -25,12 +25,18 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
             agent.destination = GetPositionUnderCursor();
-
         }
 
+        Animation();
+
+    }
+
+    private void Animation()
+    {
+        animator.SetBool("walking", reachedPosition);
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
             reachedPosition = false;
@@ -39,15 +45,14 @@ public class PlayerController : MonoBehaviour
         {
             reachedPosition = true;
         }
-
-        animator.SetBool("walking", reachedPosition);
     }
 
     Vector3 GetPositionUnderCursor()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        Physics.Raycast(ray, out hit, layerToWalkOn);
+        Physics.Raycast(ray, out hit, layerToWalkOn);   
         return hit.point;
     }
 }
+                
