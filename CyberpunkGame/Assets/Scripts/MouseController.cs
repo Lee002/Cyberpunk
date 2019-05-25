@@ -21,14 +21,19 @@ public class MouseController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log(hit.transform.tag);
+
             if(hit.transform.tag == "Civilian")
             {
                 Debug.Log("Changing " + hit.transform.name + "'s material");
                 renderer = hit.transform.GetComponentInChildren< Renderer > ();
                 renderer.material.shader = Shader.Find("Legacy Shaders/Self-Illumin/Diffuse");
-
                 renderer.material.color = Color.yellow;
+
+                if(Input.GetMouseButtonDown(0))
+                {
+                    player.selectedCivilian = hit.transform.GetComponent<CivilianUnit>();
+                    player.StartHarvesting();
+                }
             }
             else
             {

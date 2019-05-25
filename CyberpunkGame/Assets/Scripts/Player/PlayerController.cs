@@ -22,13 +22,27 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private LayerMask layerToWalkOn;
     [HideInInspector]public PlayerMovements playerMovements;
-
+    public CivilianUnit selectedCivilian;
     private Vector3 previousPosition;
+    private HarvestingSystem harvesting;
     public float curSpeed;
 
     void Start()
     {
         playerMovements = GetComponent<PlayerMovements>();
+        harvesting = HarvestingSystem.instance;
+    }
+
+    public void StartHarvesting()
+    {
+        float distance = Vector3.Distance(transform.position, selectedCivilian.transform.position);
+        if(distance <= 4f)
+        {
+            player_data.State = State.Harvesting;
+            harvesting.StartCoroutine("StartHarvesting", selectedCivilian);
+        }
+
+        
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -37,24 +51,9 @@ public class PlayerController : MonoBehaviour
         {
             agent.destination = GetPositionUnderCursor();
         }
-
-        if(Input.GetKeyDown(KeyCode.C))
-        {
-            if(player_data.State != State.Crouched)
-            {
-                player_data.State = State.Crouched;
-
-            }
-            else
-            {
-                player_data.State = State.Idle;
-            }
-
-
-        }
         Animation();
 
-
+        
     }
 
     private void Animation()
@@ -83,7 +82,9 @@ public class PlayerController : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        Physics.Raycast(ray, out hit, layerToWalkOn);   
+        Physics.Raycast(ray, out hit, layerToWalkOn);
+        if (hit.transform.tag == "Civilian")
+            return transform.position;
         return hit.point;
     }
 }
