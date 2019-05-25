@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1526980366}
-  m_IndirectSpecularColor: {r: 0.28522775, g: 0.37105906, b: 0.4914549, a: 1}
+  m_IndirectSpecularColor: {r: 0.0046106507, g: 0.003899819, b: 0.0019413065, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2129,7 +2129,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 1.25
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2174,7 +2174,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -1.733123e+17, z: 6.64e-43, w: -1.422511e+17}
+  m_BoundingSphereOverride: {x: 0, y: -0.000000020521398, z: 4.7e-43, w: -0.000000014722971}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2185,13 +2185,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526980365}
-  m_LocalRotation: {x: 0.35220388, y: -0.78583056, z: 0.19625102, w: 0.46894372}
+  m_LocalRotation: {x: 0.59636754, y: 0.67437994, z: 0.3799287, w: 0.21263045}
   m_LocalPosition: {x: 0, y: 3.43, z: 3.789}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 140.3, y: 51.1, z: 151.3}
+  m_LocalEulerAnglesHint: {x: -15.000001, y: 130, z: 90.00001}
 --- !u!1001 &1537205034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2509,6 +2509,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Idle
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 40a35ee2b1817f044be0680d87aaee8d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bff7eae28fad8094791d3a0cb0e5cf24, type: 2}
     - target: {fileID: -4216859302048453862, guid: 40a35ee2b1817f044be0680d87aaee8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2564,11 +2569,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 40a35ee2b1817f044be0680d87aaee8d,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: bff7eae28fad8094791d3a0cb0e5cf24, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40a35ee2b1817f044be0680d87aaee8d, type: 3}
 --- !u!1001 &1987170263
