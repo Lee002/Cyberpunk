@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    [SerializeField] private Animator animator;
+    [SerializeField] public Animator animator;
     [HideInInspector] public bool reachedPosition;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private LayerMask layerToWalkOn;
@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
         if(distance <= 4f)
         {
             player_data.State = State.Harvesting;
+            transform.LookAt(selectedCivilian.transform);
             harvesting.StartCoroutine("StartHarvesting", selectedCivilian);
         }
 

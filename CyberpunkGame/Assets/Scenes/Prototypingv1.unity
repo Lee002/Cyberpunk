@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faad9e6e1db1f26489ff434f33e4eef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  harvestingTimer: 2
+  harvestingTimer: 4
 --- !u!4 &406102163
 Transform:
   m_ObjectHideFlags: 0
