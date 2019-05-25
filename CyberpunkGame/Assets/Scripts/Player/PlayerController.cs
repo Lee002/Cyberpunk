@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public bool reachedPosition;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private LayerMask layerToWalkOn;
+
     void Awake()
     {
         instance = this;
@@ -31,7 +32,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Animation();
-
+        
     }
 
     private void Animation()
