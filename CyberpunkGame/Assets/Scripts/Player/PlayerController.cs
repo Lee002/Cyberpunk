@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator animator;
     [HideInInspector] public bool reachedPosition;
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private LayerMask layerToWalkOn;
     void Awake()
     {
         instance = this;
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        Physics.Raycast(ray, out hit);
+        Physics.Raycast(ray, out hit, layerToWalkOn);
         return hit.point;
     }
 }
