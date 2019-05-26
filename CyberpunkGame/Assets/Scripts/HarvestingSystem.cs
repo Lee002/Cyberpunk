@@ -24,7 +24,7 @@ public class HarvestingSystem : MonoBehaviour
         Destroy(civilian.gameObject);
         PlayerController.instance.animator.SetBool("isHarvesting", false);
         NotificationController.instance.startedHarvesting = false;
-        civilian.GetComponent<ProressBar>().rProgressBar.SetActive(false);
+        civilian.GetComponentInChildren<ProressBar>().rProgressBar.SetActive(false);
         harvestingnotification.SetActive(false);
     }
 
