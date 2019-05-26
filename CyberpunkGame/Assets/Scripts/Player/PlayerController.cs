@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 previousPosition;
     private HarvestingSystem harvesting;
     public float curSpeed;
-
+    float distance;
 
     void Start()
     {
@@ -36,11 +36,13 @@ public class PlayerController : MonoBehaviour
 
     public void StartHarvesting()
     {
-        float distance = Vector3.Distance(transform.position, selectedCivilian.transform.position);
-        if(distance <= 2f)
+        distance = Vector3.Distance(transform.position, selectedCivilian.transform.position);
+
+        if (distance <= 2f)
         {
             player_data.State = State.Harvesting;
             transform.LookAt(selectedCivilian.transform);
+            NotificationController.instance.startedHarvesting = true;
             harvesting.StartCoroutine("StartHarvesting", selectedCivilian);
         }
 
@@ -86,7 +88,7 @@ public class PlayerController : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         Physics.Raycast(ray, out hit, layerToWalkOn);
-        if (hit.transform.tag == "Civilian")
+        if (hit.transform.tag == "Civilian" && distance >= 2f)
         {
             NotificationController.instance.StartCoroutine("CantHarvestNotif");
             return transform.position;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NotificationController : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class NotificationController : MonoBehaviour
     }
     #endregion
     public GameObject cantHarvestNotif;
+
+    public GameObject rProgressBar;
+
+
+    public bool startedHarvesting;
     public IEnumerator CantHarvestNotif()
     {
         cantHarvestNotif.SetActive(true);
@@ -20,9 +26,9 @@ public class NotificationController : MonoBehaviour
         cantHarvestNotif.SetActive(false);
     }
 
+    
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
