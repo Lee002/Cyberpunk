@@ -1533,7 +1533,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 8.69e-43, y: 0, z: 1.4205e-41, w: 9.1837e-41}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1624,7 +1624,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 1e-45, w: 7e-45}
+  m_BoundingSphereOverride: {x: -1.7014118e+38, y: 0.390625, z: 0.08984375, w: 21}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1715,7 +1715,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 8.1e-44, z: 1e-45, w: 1.46e-43}
+  m_BoundingSphereOverride: {x: 1.5e-44, y: 1, z: 0, w: -1.7014118e+38}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2207,6 +2207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691ed77e8f439b449b100587e07b3f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  harvested: 0
+  animation: {fileID: 2114000644211352405}
+  blood: {fileID: 1000010675638318, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
 --- !u!1 &5025626566083823705
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,11 +3067,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RadialProgressBar (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8334270590063162660, guid: 1251efc88d858834fa9f4275b7266c9c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334270590063162659, guid: 1251efc88d858834fa9f4275b7266c9c,
         type: 3}

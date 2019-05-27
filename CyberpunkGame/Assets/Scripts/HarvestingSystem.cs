@@ -15,13 +15,15 @@ public class HarvestingSystem : MonoBehaviour
 
     public IEnumerator StartHarvesting(CivilianUnit civilian)
     {
+        civilian.harvested = true;
         Debug.Log("Starting harvest");
         PlayerController.instance.animator.SetBool("isHarvesting", true);
         civilian.GetComponentInChildren<ProressBar>().rProgressBar.SetActive(true);
         harvestingnotification.SetActive(true);
+
         yield return new WaitForSeconds(harvestingTimer);
         Debug.Log("You have harvested a civilian" + civilian.name);
-        Destroy(civilian.gameObject);
+        Destroy(civilian.gameObject, 4f);
         PlayerController.instance.animator.SetBool("isHarvesting", false);
         NotificationController.instance.startedHarvesting = false;
         civilian.GetComponentInChildren<ProressBar>().rProgressBar.SetActive(false);
