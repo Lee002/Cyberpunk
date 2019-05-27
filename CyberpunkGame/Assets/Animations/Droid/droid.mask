@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: droid
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: root
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontL_leg_base
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontL_leg_base/frontL_leg_mid
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontL_leg_base/frontL_leg_mid/frontL_leg_lower
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontL_leg_base/frontL_leg_mid/frontL_leg_lower/frontL_leg_tip
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontR_leg_base
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontR_leg_base/frontR_leg_mid
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontR_leg_base/frontR_leg_mid/frontR_leg_lower
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/frontR_leg_base/frontR_leg_mid/frontR_leg_lower/frontR_leg_tip
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearL_leg_base
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearL_leg_base/rearL_leg_mid
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearL_leg_base/rearL_leg_mid/rearL_leg_lower
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearL_leg_base/rearL_leg_mid/rearL_leg_lower/rearL_leg_tip
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearR_leg_base
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearR_leg_base/rearR_leg_mid
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearR_leg_base/rearR_leg_mid/rearR_leg_lower
+    m_Weight: 1
+  - m_Path: root/bottomPiece_base/rearR_leg_base/rearR_leg_mid/rearR_leg_lower/rearR_leg_tip
+    m_Weight: 1
+  - m_Path: root/camPlatform
+    m_Weight: 1
+  - m_Path: root/camPlatform/cam_base
+    m_Weight: 1
+  - m_Path: root/camPlatform/cam_base/cam_mid
+    m_Weight: 1
+  - m_Path: root/camPlatform/cam_base/cam_mid/cam_tip
+    m_Weight: 1
+  - m_Path: root/topPiece
+    m_Weight: 1
+  - m_Path: root/topPiece/antenna
+    m_Weight: 1
