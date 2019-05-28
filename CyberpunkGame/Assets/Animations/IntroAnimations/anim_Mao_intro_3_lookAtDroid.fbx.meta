@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: f16af3af90cbab743b3baff6beb87f31
+guid: 86e4fd88c80728742a4790f65a59f2da
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
-      74: 8909416008579606091
-    second: idle_brokenLeg
+      74: -3501729345941258629
+    second: intro_3_lookAtDroid
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -19,15 +19,17 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
+      copied configuration does not match position in animation file:\n\t'Neck' :
+      position error = 47.881992 mm\nCopied Avatar Rig Configuration mis-match. Inbetween
+      bone rotation in copied configuration does not match rotation in animation file:\n\t'R_foot'
+      : rotation error = 23.035929 deg\n\t'R_fingers_base' : rotation error = 12.146286
+      deg\n"
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'idle_brokenLeg' has import animation warnings
+    animationImportWarnings: "\nClip 'intro_3_lookAtDroid' has import animation warnings
       that might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'L_foot' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'R_foot' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'L_thumb_base'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_fingers_base'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+      to improve retargeting quality.\n\t'R_foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -41,25 +43,25 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle_brokenLeg
-      takeName: idle_brokenLeg
-      internalID: 8909416008579606091
-      firstFrame: 2500
-      lastFrame: 2740
+      name: intro_3_lookAtDroid
+      takeName: intro_3_lookAtDroid
+      internalID: -3501729345941258629
+      firstFrame: 1510
+      lastFrame: 1740
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
