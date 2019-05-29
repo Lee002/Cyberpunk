@@ -6,7 +6,7 @@ public class CivilianUnit : MonoBehaviour
 {
     public bool harvested = false;
     [SerializeField]private Animator animation;
-    [SerializeField] private GameObject blood;
+    [SerializeField] public GameObject blood;
     
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,7 @@ public class CivilianUnit : MonoBehaviour
         if(harvested)
         {
             Instantiate(blood, transform.position, Quaternion.identity);
+            //harvested = false;
         }
         animation.SetBool("harvested", harvested);
         Ray ray = new Ray(transform.position, Vector3.forward);

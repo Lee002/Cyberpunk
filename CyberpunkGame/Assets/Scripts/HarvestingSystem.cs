@@ -20,7 +20,8 @@ public class HarvestingSystem : MonoBehaviour
         PlayerController.instance.animator.SetBool("isHarvesting", true);
         civilian.GetComponentInChildren<ProressBar>().rProgressBar.SetActive(true);
         harvestingnotification.SetActive(true);
-
+        
+        GameManager.instance.harvestedMaterials.value += 25f;
         yield return new WaitForSeconds(harvestingTimer);
         Debug.Log("You have harvested a civilian" + civilian.name);
         Destroy(civilian.gameObject, 4f);
@@ -28,6 +29,7 @@ public class HarvestingSystem : MonoBehaviour
         NotificationController.instance.startedHarvesting = false;
         civilian.GetComponentInChildren<ProressBar>().rProgressBar.SetActive(false);
         harvestingnotification.SetActive(false);
+
     }
 
     void Update()
