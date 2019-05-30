@@ -12,6 +12,7 @@ public class DroidController : MonoBehaviour
     [SerializeField] private float timer = 3f;
     private float time;
     [SerializeField] private AudioSource source;
+    [SerializeField] private TextMeshProUGUI objective;
     void Start()
     {
         manager = GameManager.instance;
@@ -36,7 +37,7 @@ public class DroidController : MonoBehaviour
         {
             animation.SetBool("canCollect", true);
             droidBringMeUi.SetActive(true);
-
+            objective.fontStyle = FontStyles.Strikethrough;
             WaitForMao();
         }
         else

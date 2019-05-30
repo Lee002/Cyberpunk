@@ -919,6 +919,8 @@ GameObject:
   - component: {fileID: 2692674979684515300}
   - component: {fileID: 2692674979684515099}
   - component: {fileID: 8296172668093574634}
+  - component: {fileID: 8976886176334432448}
+  - component: {fileID: 8296172668093574636}
   m_Layer: 0
   m_Name: Mao_NormalLeg
   m_TagString: Player
@@ -1024,7 +1026,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2692674979684515099
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1134,6 +1136,121 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &8976886176334432448
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6232877116764176525}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 99941be514e60fc4a914115fa598e69f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &8296172668093574636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6232877116764176525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a1b39c64ffbdc4495710ccee87f34d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHidden: 0
+  cloakTimer: 4
+  cloakRechargeTimer: 10
+  material: {fileID: 2696241663970424192}
+  normalShaderMaterial: {fileID: 2100000, guid: cf6a11d272bfeda43be11fab82cfe847,
+    type: 2}
+  cloakShaderMaterial: {fileID: 2100000, guid: d0af7ad49d9e0d54cb487c1c81501239, type: 2}
 --- !u!1 &6377887174604241293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,6 +2332,12 @@ Transform:
 --- !u!95 &2391008563683537203 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 632dd8696e3e7bd40bf2a9fe3b68f78d,
+    type: 3}
+  m_PrefabInstance: {fileID: 783105793494562643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &2696241663970424192 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -5785754344752446765, guid: 632dd8696e3e7bd40bf2a9fe3b68f78d,
     type: 3}
   m_PrefabInstance: {fileID: 783105793494562643}
   m_PrefabAsset: {fileID: 0}

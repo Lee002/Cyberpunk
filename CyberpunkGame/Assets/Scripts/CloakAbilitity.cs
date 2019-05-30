@@ -16,6 +16,8 @@ public class CloakAbilitity : MonoBehaviour
     [SerializeField] private SkinnedMeshRenderer material;
     [SerializeField] private Material normalShaderMaterial;
     [SerializeField] private Material cloakShaderMaterial;
+
+    public bool abilityInstalled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,28 +28,32 @@ public class CloakAbilitity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.H) && !rechargingCloak )
+        if(abilityInstalled)
         {
-            isCloaked = true;
-        }
-
-        if(isCloaked )
-        {
-            WearCloak();
-            timer -= Time.deltaTime;
-            if(timer <= 0)
+            if (Input.GetKeyDown(KeyCode.H) && !rechargingCloak)
             {
-                timer = cloakTimer;
-                RemoveCloak();
+                isCloaked = true;
+            }
 
-                isCloaked = false;
+            if (isCloaked)
+            {
+                WearCloak();
+                timer -= Time.deltaTime;
+                if (timer <= 0)
+                {
+                    timer = cloakTimer;
+                    RemoveCloak();
+
+                    isCloaked = false;
+                }
+            }
+
+            if (rechargingCloak)
+            {
+                RechargeCloak();
             }
         }
 
-        if(rechargingCloak)
-        {
-            RechargeCloak();
-        }
     }
 
     void RemoveCloak()
