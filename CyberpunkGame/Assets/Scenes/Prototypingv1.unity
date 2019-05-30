@@ -354,10 +354,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hovercar_Crashed
       objectReference: {fileID: 0}
+    - target: {fileID: 2879930806973816945, guid: 17d544a21df35c545ae4a80b8fb687e5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879930806973816945, guid: 17d544a21df35c545ae4a80b8fb687e5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1273612798315074146, guid: 17d544a21df35c545ae4a80b8fb687e5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.99
+      value: 12.28
       objectReference: {fileID: 0}
     - target: {fileID: 1273612798315074146, guid: 17d544a21df35c545ae4a80b8fb687e5,
         type: 3}
@@ -367,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 1273612798315074146, guid: 17d544a21df35c545ae4a80b8fb687e5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.82
+      value: 8.69
       objectReference: {fileID: 0}
     - target: {fileID: 1273612798315074146, guid: 17d544a21df35c545ae4a80b8fb687e5,
         type: 3}
@@ -377,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 1273612798315074146, guid: 17d544a21df35c545ae4a80b8fb687e5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.13052665
+      value: 0.13052666
       objectReference: {fileID: 0}
     - target: {fileID: 1273612798315074146, guid: 17d544a21df35c545ae4a80b8fb687e5,
         type: 3}
@@ -431,8 +441,8 @@ GameObject:
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &140317363
 Transform:
@@ -1855,8 +1865,8 @@ GameObject:
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &750891424
 Transform:
@@ -1943,6 +1953,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: m_doorTile_type1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851259614649941496, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851259614649941496, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3453037257771618283, guid: 7a774be038f774e4294ee52decf5b897,
         type: 3}
@@ -2074,6 +2094,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b93d0b5afdfaccd49b8971e7c737fb18, type: 2}
+    - target: {fileID: 7960606652541398697, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960606652541398697, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a774be038f774e4294ee52decf5b897, type: 3}
 --- !u!1001 &762427175
@@ -3427,6 +3457,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GarbageContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4a7b01e7872d0cf40bd7ff00a32790cb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4a7b01e7872d0cf40bd7ff00a32790cb,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4a7b01e7872d0cf40bd7ff00a32790cb,
         type: 3}
@@ -4784,10 +4824,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hovercar
       objectReference: {fileID: 0}
+    - target: {fileID: 923400129992783905, guid: be05df70b6842834e9288214c4e1c45d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 923400129992783905, guid: be05df70b6842834e9288214c4e1c45d,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4218687982956317234, guid: be05df70b6842834e9288214c4e1c45d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.11
+      value: -3.31
       objectReference: {fileID: 0}
     - target: {fileID: 4218687982956317234, guid: be05df70b6842834e9288214c4e1c45d,
         type: 3}
@@ -4797,7 +4847,7 @@ PrefabInstance:
     - target: {fileID: 4218687982956317234, guid: be05df70b6842834e9288214c4e1c45d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.238195
+      value: 8.84
       objectReference: {fileID: 0}
     - target: {fileID: 4218687982956317234, guid: be05df70b6842834e9288214c4e1c45d,
         type: 3}
@@ -5017,6 +5067,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: m_doorTile_type1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1851259614649941496, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851259614649941496, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3453037257771618283, guid: 7a774be038f774e4294ee52decf5b897,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5096,6 +5156,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960606652541398697, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960606652541398697, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a774be038f774e4294ee52decf5b897, type: 3}
@@ -5926,6 +5996,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: m_doorTile_type1
       objectReference: {fileID: 0}
+    - target: {fileID: 1851259614649941496, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851259614649941496, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3453037257771618283, guid: 7a774be038f774e4294ee52decf5b897,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6006,6 +6086,16 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.y
       value: 2.5350226e-38
       objectReference: {fileID: 0}
+    - target: {fileID: 7960606652541398697, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960606652541398697, guid: 7a774be038f774e4294ee52decf5b897,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a774be038f774e4294ee52decf5b897, type: 3}
 --- !u!1001 &8232901432558164998
@@ -6019,6 +6109,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: m_garageTile
+      objectReference: {fileID: 0}
+    - target: {fileID: 99300389606709976, guid: dafaba978aa0e2d4f932cf7d59ad8ea0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 99300389606709976, guid: dafaba978aa0e2d4f932cf7d59ad8ea0,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3979934078979156171, guid: dafaba978aa0e2d4f932cf7d59ad8ea0,
         type: 3}
@@ -6099,6 +6199,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Range
       value: 7.585292
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232901433704962504, guid: dafaba978aa0e2d4f932cf7d59ad8ea0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232901433704962504, guid: dafaba978aa0e2d4f932cf7d59ad8ea0,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8232901433704962505, guid: dafaba978aa0e2d4f932cf7d59ad8ea0,
         type: 3}
