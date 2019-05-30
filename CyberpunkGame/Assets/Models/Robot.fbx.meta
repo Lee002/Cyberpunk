@@ -72,7 +72,97 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Robot(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RoboEye3
+      parentName: Robot(Clone)
+      position: {x: 0.12756675, y: 1.484827, z: -0.2713426}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 3.9861162, y: 4.491763, z: 6.5238557}
+    - name: RoboEye2
+      parentName: Robot(Clone)
+      position: {x: 0.08331936, y: 1.484827, z: -0.2713426}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 3.9861162, y: 4.491763, z: 6.5238557}
+    - name: RoboEye1
+      parentName: Robot(Clone)
+      position: {x: 0.042759236, y: 1.484827, z: -0.2713426}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 3.9861162, y: 4.491763, z: 6.5238557}
+    - name: RoboHeadUpper
+      parentName: Robot(Clone)
+      position: {x: -0, y: 1.4789462, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 55.357002, y: 37.359505, z: 20.52129}
+    - name: RoboHeadLower
+      parentName: Robot(Clone)
+      position: {x: -0, y: 1.1979635, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.269287, y: 33.269287, z: 11.874545}
+    - name: RoboTorso
+      parentName: Robot(Clone)
+      position: {x: -0, y: 0.0242069, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 30.768261, y: 30.768261, z: 30.768261}
+    - name: RoboLegL
+      parentName: Robot(Clone)
+      position: {x: 0.28330773, y: 0.12081624, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 38.452446, y: 38.452446, z: 38.452446}
+    - name: RoboBarrel2R
+      parentName: Robot(Clone)
+      position: {x: 0.53298724, y: 1.00427, z: -0.72738445}
+      rotation: {x: -0.65618813, y: -0.26347134, z: 0.26347134, w: 0.65618813}
+      scale: {x: 2.8817084, y: 20.30403, z: 2.8817084}
+    - name: RoboBarrel1R
+      parentName: Robot(Clone)
+      position: {x: 0.53298724, y: 0.92951596, z: -0.72092414}
+      rotation: {x: -0.6561882, y: -0.26347136, z: 0.2634714, w: 0.6561881}
+      scale: {x: 3.4911244, y: 24.597872, z: 3.4911244}
+    - name: RoboArmL
+      parentName: Robot(Clone)
+      position: {x: 0.53554523, y: 0.97869164, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 27.162338, y: 43.06577, z: 43.06577}
+    - name: RoboArmJointR
+      parentName: Robot(Clone)
+      position: {x: 0.34498924, y: 0.97443795, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 23.8071, y: 23.8071, z: 23.8071}
+    - name: RoboEye4
+      parentName: Robot(Clone)
+      position: {x: -0.106575735, y: 1.4378142, z: -0.2713426}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 5.884152, y: 6.630569, z: 5.884152}
+    - name: RoboBarrel1L
+      parentName: Robot(Clone)
+      position: {x: 0.53298724, y: 0.92951596, z: -0.72092414}
+      rotation: {x: -0.6561882, y: -0.26347136, z: 0.2634714, w: 0.6561881}
+      scale: {x: 3.4911244, y: 24.597872, z: 3.4911244}
+    - name: RoboBarrel2L
+      parentName: Robot(Clone)
+      position: {x: 0.53298724, y: 1.00427, z: -0.72738445}
+      rotation: {x: -0.65618813, y: -0.26347134, z: 0.26347134, w: 0.65618813}
+      scale: {x: 2.8817084, y: 20.30403, z: 2.8817084}
+    - name: RoboLegR
+      parentName: Robot(Clone)
+      position: {x: 0.28330773, y: 0.12081624, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 38.452446, y: 38.452446, z: 38.452446}
+    - name: RoboArmR
+      parentName: Robot(Clone)
+      position: {x: 0.53554523, y: 0.97869164, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 27.162338, y: 43.06577, z: 43.06577}
+    - name: RoboArmJointL
+      parentName: Robot(Clone)
+      position: {x: 0.34498924, y: 0.97443795, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 23.8071, y: 23.8071, z: 23.8071}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

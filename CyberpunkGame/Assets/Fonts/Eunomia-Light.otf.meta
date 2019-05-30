@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 265392a2939d10f418cef095a3fa4d14
-=======
-guid: 7eaf6d92360103949bb7e1c7c3894750
->>>>>>> 46dd8a83494550c82dd5d3b6b2263f3c32c3ccdb
+guid: d9e06ae9ab95d9641bc96f4f046c247e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -15,12 +11,9 @@ TrueTypeFontImporter:
   fontName: Eunomia
   fontNames:
   - Eunomia
-<<<<<<< HEAD
-  fallbackFontReferences: []
-=======
   fallbackFontReferences:
+  - {fileID: 12800000, guid: 7eaf6d92360103949bb7e1c7c3894750, type: 3}
   - {fileID: 12800000, guid: 6716d49b2f46175429d89c7857bd09b9, type: 3}
->>>>>>> 46dd8a83494550c82dd5d3b6b2263f3c32c3ccdb
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: 04dfbc86520835e47b4ed29575700d37
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerArm' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.4
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: sm_robotEnemy(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: robotEnemy_meshes
+      parentName: sm_robotEnemy(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RoboLegR
+      parentName: robotEnemy_meshes
+      position: {x: -0.28330773, y: 0.12081624, z: 3.469519e-17}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 38.452446, y: 38.452446, z: 38.452446}
+    - name: RoboArmJointL
+      parentName: robotEnemy_meshes
+      position: {x: -0.34498924, y: 0.97443795, z: 4.2248994e-17}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 23.8071, y: 23.8071, z: 23.8071}
+    - name: RoboArmR
+      parentName: robotEnemy_meshes
+      position: {x: -25.417076, y: 0.97869164, z: 6.558538e-17}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 27.162338, y: 43.06577, z: 43.06577}
+    - name: RoboBarrel2R
+      parentName: RoboArmR
+      position: {x: -0.7447548, y: 0.016890086, z: -0.095333755}
+      rotation: {x: 0.000000053522093, y: -0.2682907, z: -0.000000028804141, w: 0.963338}
+      scale: {x: 0.089521065, y: 0.47146562, z: 0.07930042}
+    - name: RoboBarrel1R
+      parentName: RoboArmR
+      position: {x: -0.8070146, y: 0.016740076, z: -0.08292264}
+      rotation: {x: 0.000000053522093, y: -0.2682908, z: -0.00000002880415, w: 0.963338}
+      scale: {x: 0.10845273, y: 0.5711699, z: 0.09607066}
+    - name: RoboArmL
+      parentName: robotEnemy_meshes
+      position: {x: -0.53554523, y: 0.97869164, z: 6.558538e-17}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 27.162338, y: 43.06577, z: 43.06577}
+    - name: RoboBarrel1L
+      parentName: RoboArmL
+      position: {x: -0.000094176154, y: 0.016740074, z: -0.0011418707}
+      rotation: {x: 0.000000053522093, y: -0.2682908, z: -0.00000002880415, w: 0.963338}
+      scale: {x: 0.10845273, y: 0.5711699, z: 0.09607066}
+    - name: RoboBarrel2L
+      parentName: RoboArmL
+      position: {x: -0.000094176154, y: 0.016890084, z: 0.0005939401}
+      rotation: {x: 0.000000053522093, y: -0.2682907, z: -0.000000028804141, w: 0.963338}
+      scale: {x: 0.089521065, y: 0.47146562, z: 0.07930042}
+    - name: RoboArmJointR
+      parentName: robotEnemy_meshes
+      position: {x: -0.34498924, y: 0.97443795, z: 4.2248994e-17}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 23.8071, y: 23.8071, z: 23.8071}
+    - name: RoboLegL
+      parentName: robotEnemy_meshes
+      position: {x: -0.28330773, y: 0.12081624, z: 3.469519e-17}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 38.452446, y: 38.452446, z: 38.452446}
+    - name: RoboTorso
+      parentName: robotEnemy_meshes
+      position: {x: -0, y: 0.0242069, z: 0}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 30.768261, y: 30.768261, z: 30.768261}
+    - name: RoboHeadLower
+      parentName: RoboTorso
+      position: {x: -4.671818e-18, y: -0.0000000062151453, z: 0.03814829}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.081286, y: 1.081286, z: 0.3859349}
+    - name: RoboHeadUpper
+      parentName: robotEnemy_meshes
+      position: {x: -0, y: 1.4789462, z: 0}
+      rotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+      scale: {x: 55.357002, y: 37.359505, z: 20.52129}
+    - name: RoboEye1
+      parentName: RoboHeadUpper
+      position: {x: 0.0007724269, y: 0.0072630136, z: 0.00028657576}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.07200744, y: 0.1202308, z: 0.3179067}
+    - name: RoboEye2
+      parentName: RoboHeadUpper
+      position: {x: 0.0015051276, y: 0.0072630136, z: 0.00028657576}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.07200744, y: 0.1202308, z: 0.3179067}
+    - name: RoboEye3
+      parentName: RoboHeadUpper
+      position: {x: 0.0023044376, y: 0.0072630136, z: 0.00028657576}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.07200744, y: 0.1202308, z: 0.3179067}
+    - name: RoboEye4
+      parentName: RoboHeadUpper
+      position: {x: -0.001925244, y: 0.007263014, z: -0.0020043533}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.106294625, y: 0.17748012, z: 0.286734}
+    - name: robotEnemy_superMover
+      parentName: sm_robotEnemy(Clone)
+      position: {x: -0, y: -1.6585166, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis_CTRL
+      parentName: robotEnemy_superMover
+      position: {x: 0.00020184596, y: 1.769691, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: root
+      parentName: sm_robotEnemy(Clone)
+      position: {x: 0.00020184596, y: 1.8026068, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: torso
+      parentName: root
+      position: {x: -0.0005821102, y: 0.86830187, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_arm
+      parentName: torso
+      position: {x: 0.34364286, y: -0.005534117, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_gun
+      parentName: R_arm
+      position: {x: 0.18939786, y: -0.0042231055, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_arm
+      parentName: torso
+      position: {x: -0.34529507, y: -0.005534117, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_gun
+      parentName: L_arm
+      position: {x: -0.18581665, y: -0.0042231055, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: torso
+      position: {x: 0.00038026585, y: 0.44920036, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_leg_upper
+      parentName: root
+      position: {x: 0.28724098, y: 0.018855618, z: -0.01040648}
+      rotation: {x: 0.000000010534375, y: -0.000000010538457, z: -0.7084397, w: 0.7057714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_leg_knee
+      parentName: R_leg_upper
+      position: {x: 0.9530157, y: 0.00030186202, z: 0.052526485}
+      rotation: {x: 2.9191212e-19, y: -1.2870621e-14, z: 0.0018867824, w: 0.9999982}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_leg_ankle
+      parentName: R_leg_knee
+      position: {x: 0.630436, y: 2.8876458e-14, z: -0.040661663}
+      rotation: {x: -0.6844094, y: -0.17771839, z: -0.1777184, w: 0.6844094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_leg_foot
+      parentName: R_leg_ankle
+      position: {x: 0.2265079, y: 0.000000105450304, z: 9.094948e-15}
+      rotation: {x: 0.0000000019959425, y: -0.00000001654001, z: -0.53510016, w: 0.8447886}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_leg_toe
+      parentName: R_leg_foot
+      position: {x: 0.19435446, y: 0.00000026607606, z: -6.8212103e-16}
+      rotation: {x: 0.023531055, y: -0.70671517, z: 0.023531055, w: 0.70671517}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_leg_upper
+      parentName: root
+      position: {x: -0.28764462, y: 0.018855497, z: -0.010406468}
+      rotation: {x: 0.7057714, y: 0.7084397, z: 8.644913e-17, w: -1.6510648e-20}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_leg_knee
+      parentName: L_leg_upper
+      position: {x: -0.9530171, y: -0.00030175896, z: -0.05252656}
+      rotation: {x: 2.8769838e-19, y: -1.299239e-14, z: 0.0018867824, w: 0.9999982}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_leg_ankle
+      parentName: L_leg_knee
+      position: {x: -0.6304345, y: -9.683282e-15, z: 0.040661752}
+      rotation: {x: -0.6844094, y: -0.1777184, z: -0.1777184, w: 0.6844094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_leg_foot
+      parentName: L_leg_ankle
+      position: {x: -0.22650807, y: -1.5631941e-16, z: -3.0236575e-15}
+      rotation: {x: 7.50323e-16, y: 2.5051868e-16, z: -0.53510016, w: 0.8447886}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_leg_toe
+      parentName: L_leg_foot
+      position: {x: -0.19435413, y: 1.6520119e-16, z: 2.8425002e-16}
+      rotation: {x: 0.023531055, y: -0.70671517, z: 0.023531055, w: 0.70671517}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.4
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
