@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototypingv2 - LEVEL 2.unity
     guid: c215428d2308cb2429da0e2d1e1d5c52
+  - enabled: 1
+    path: Assets/Scenes/Prototypingv4 - LEVEL 3.unity
+    guid: 767533c5e5d568d42a31fa4d2c051f2f
+  - enabled: 1
+    path: Assets/Scenes/Prototypingv3 - LEVEL 4.unity
+    guid: 2891351e6b678dc48b00a8a58b01330f
   m_configObjects: {}
