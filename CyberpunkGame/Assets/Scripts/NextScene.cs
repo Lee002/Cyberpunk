@@ -19,7 +19,7 @@ public class NextScene : MonoBehaviour {
 
     public void OnFadeComplete()
     {
-        SceneManager.LoadScene(1); // starts at 0, see File/Build Settings
+        SceneManager.LoadScene(sceneToLoad); // starts at 0, see File/Build Settings
     }
 	
     public void LoadSceneNext()
