@@ -969,6 +969,115 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1146867552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146867553}
+  - component: {fileID: 1146867556}
+  - component: {fileID: 1146867555}
+  - component: {fileID: 1146867554}
+  - component: {fileID: 1146867557}
+  m_Layer: 5
+  m_Name: BlackFade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1146867553
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146867552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1612375543}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1146867554
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146867552}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e9711ba563d6ab4da3d6a8b9c6ea55d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1146867555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146867552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1146867556
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146867552}
+  m_CullTransparentMesh: 0
+--- !u!114 &1146867557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146867552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5ab0244a18b35409eb4e55617fe582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeAnimator: {fileID: 1146867554}
+  sceneToLoad: 0
 --- !u!1 &1148033498 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7b73723e50a699648b5b530f0ac9bbc1,
@@ -985,9 +1094,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 039dddce67c966944a7c72617e3d27c5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3ad99a0cb63712249b1638771bf89eb4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.56
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1127,9 +1236,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   droidVoice1: {fileID: 1148033499}
   droidVoices:
-  - {fileID: 8300000, guid: 53de03cd453d7d74c93856665c2b9043, type: 3}
-  - {fileID: 8300000, guid: fe3de0d2e1e5a8440905d4d467d1da3e, type: 3}
-  - {fileID: 8300000, guid: b1c2d4ed9f0137c4388c844a964c65a3, type: 3}
+  - {fileID: 8300000, guid: 4c047a1ab45007845bc5f6125bf2208e, type: 3}
+  - {fileID: 8300000, guid: 36b541e8fcd0ebf4b86e1dc042ce4b2d, type: 3}
+  - {fileID: 8300000, guid: a71f1b1726d56ec45ae994d1e9bf48ad, type: 3}
+  - {fileID: 8300000, guid: 46eb8a232aec8da4d805267d66f832a1, type: 3}
+  - {fileID: 8300000, guid: 18ed315ffda43a242a63fb5c73b2059f, type: 3}
+  levelEndObj: {fileID: 1146867552}
 --- !u!4 &1157549603
 Transform:
   m_ObjectHideFlags: 0
@@ -1718,6 +1830,7 @@ RectTransform:
   - {fileID: 24870136}
   - {fileID: 1720098130}
   - {fileID: 50631564}
+  - {fileID: 1146867553}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6549,16 +6662,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1612375543}
     m_Modifications:
-    - target: {fileID: 8334270590063162660, guid: 1251efc88d858834fa9f4275b7266c9c,
-        type: 3}
-      propertyPath: m_Name
-      value: RadialProgressBar (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8334270590063162660, guid: 1251efc88d858834fa9f4275b7266c9c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8334270590063162659, guid: 1251efc88d858834fa9f4275b7266c9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6663,6 +6766,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334270590063162660, guid: 1251efc88d858834fa9f4275b7266c9c,
+        type: 3}
+      propertyPath: m_Name
+      value: RadialProgressBar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334270590063162660, guid: 1251efc88d858834fa9f4275b7266c9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1251efc88d858834fa9f4275b7266c9c, type: 3}

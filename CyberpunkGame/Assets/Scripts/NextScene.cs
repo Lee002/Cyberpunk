@@ -4,14 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour {
-    
+
+    public Animator fadeAnimator;
+
+    public int sceneToLoad;
+
 	void LoadScene(int scene)
     {
-        SceneManager.LoadScene(scene); // starts at 0, see File/Build Settings
+        sceneToLoad = scene;
+        fadeAnimator.SetTrigger("FadeToBlack");
+    }
+
+    public void OnFadeComplete()
+    {
+        SceneManager.LoadScene(sceneToLoad); // starts at 0, see File/Build Settings
     }
 	
-    void LoadSceneNext()
+    public void LoadSceneNext()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
