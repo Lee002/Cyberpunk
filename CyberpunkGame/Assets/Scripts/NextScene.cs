@@ -14,7 +14,7 @@ public class NextScene  {
 	
     public void LoadSceneNext()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public IEnumerator  LoadSceneNextAfterTime()
