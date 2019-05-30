@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     {
         distance = Vector3.Distance(transform.position, selectedCivilian.transform.position);
 
-        if (distance <= 2f)
+        if (distance <= 4f)
         {
             player_data.State = State.Harvesting;
             transform.LookAt(selectedCivilian.transform);
@@ -70,14 +70,17 @@ public class PlayerController : MonoBehaviour
             reachedPosition = false;
             player_data.State = State.Idle;
             animator.SetFloat("Speed", agent.remainingDistance);
+            animator.SetBool("walking", reachedPosition);
+            agent.SetDestination(transform.position);
         }
         else
         {
             //Player stopped
             reachedPosition = true;
             player_data.State = State.Walking;
-            
+            animator.SetBool("walking", reachedPosition);
             animator.SetFloat("Speed", agent.remainingDistance );
+
         }
 
 
@@ -88,11 +91,12 @@ public class PlayerController : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         Physics.Raycast(ray, out hit, layerToWalkOn);
-        if (hit.transform.tag == "Civilian" && distance >= 2f)
+        /*if (hit.transform.tag == "Civilian")
         {
             NotificationController.instance.StartCoroutine("CantHarvestNotif");
-            return transform.position;
-        }
+            
+            return hit.point;
+        }*/
         return hit.point;
     }
 }

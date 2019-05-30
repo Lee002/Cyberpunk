@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public FloatDataAsset harvestedMaterials;
 
     public int currLevel;
-
+    public GameObject gameOverScreen;
 
     void Start()
     {
@@ -32,5 +32,17 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
+    }
+
+
+    public void GameOver()
+    {
+        gameOverScreen.SetActive(true);
+        Invoke("RestartLevel", 3f);
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(currLevel);
     }
 }
