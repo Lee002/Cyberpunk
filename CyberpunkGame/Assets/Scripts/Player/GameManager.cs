@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     public int currLevel;
     public GameObject gameOverScreen;
-
+    public CloakAbilitity abilitity;
     void Start()
     {
         harvestedMaterials.value = 0f;
@@ -30,8 +30,14 @@ public class GameManager : MonoBehaviour
                 neededMaterials.value = 100f;
                 FindObjectOfType<AudioManager>().Play("Level2");
                 break;
+            case 3:
+                neededMaterials.value = 200f;
+                FindObjectOfType<AudioManager>().Play("Level2");
+                break;
             case 4:
-                FindObjectOfType<CloakAbilitity>().abilityInstalled = true;
+                neededMaterials.value = 250f;
+                FindObjectOfType<AudioManager>().Play("Level2");
+                abilitity.abilityInstalled = true;
                 break;
             default:
                 break;
@@ -47,6 +53,6 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(currLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
