@@ -7,11 +7,19 @@ public class CivilianUnit : MonoBehaviour
     public bool harvested = false;
     [SerializeField]private Animator animation;
     [SerializeField] public GameObject blood;
-    
+    [SerializeField] private List<AudioClip> clips;
+    [SerializeField] private AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    public void PlayRandomAudioSFX()
+    {
+        int r = Random.Range(0, clips.Count);
+        source.clip = clips[r];
+        source.Play();
     }
     // Update is called once per frame
     void Update()

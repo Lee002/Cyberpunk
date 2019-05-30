@@ -22,6 +22,8 @@ public class HarvestingSystem : MonoBehaviour
         harvestingnotification.SetActive(true);
         PlayerController.instance.transform.GetComponent<AudioSource>().Play();
         GameManager.instance.harvestedMaterials.value += 25f;
+        civilian.PlayRandomAudioSFX();
+
         yield return new WaitForSeconds(harvestingTimer);
         Debug.Log("You have harvested a civilian" + civilian.name);
         Destroy(civilian.gameObject, 4f);
