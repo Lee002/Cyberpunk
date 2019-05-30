@@ -12,6 +12,7 @@ public class IntroManager : MonoBehaviour
     public void StartAudio()
     {
         droidVoice1.Play();
+        DialogueTrigger.instance.TriggerDialogue();
         droid.SetBool("talking", true);
         Invoke("StartAudio2", 7f);
     }
@@ -19,6 +20,7 @@ public class IntroManager : MonoBehaviour
     {
         
         droidVoice1.clip = droidVoices[0];
+        DialogueManager.instance.DisplayNextSentence();
         droidVoice1.Play();
         Invoke("StartAudio3", 5f);
     }
@@ -26,13 +28,17 @@ public class IntroManager : MonoBehaviour
     void StartAudio3()
     {
         droidVoice1.clip = droidVoices[1];
+        DialogueManager.instance.DisplayNextSentence();
         droidVoice1.Play();
         Invoke("StartAudio4", 6f);
     }
     void StartAudio4()
     {
         droidVoice1.clip = droidVoices[2];
+        DialogueManager.instance.DisplayNextSentence();
         droidVoice1.Play();
+        
+
     }
 
     void SetPosition()
