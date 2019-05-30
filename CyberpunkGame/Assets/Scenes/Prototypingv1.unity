@@ -1488,12 +1488,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1987170263}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &504822636 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1946189116078641676, guid: f046ea8cd28638c4e8e81af9780deff5,
-    type: 3}
-  m_PrefabInstance: {fileID: 926890723}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &521700908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2508,11 +2502,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: sm_droid
       objectReference: {fileID: 0}
-    - target: {fileID: 3218057910197382446, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Droid
-      objectReference: {fileID: 0}
     - target: {fileID: 1942053396821679933, guid: f046ea8cd28638c4e8e81af9780deff5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2568,39 +2557,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1931437714396488545, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 718087861694512330, guid: f046ea8cd28638c4e8e81af9780deff5,
+    - target: {fileID: 1946189116078641676, guid: f046ea8cd28638c4e8e81af9780deff5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5422510158712741757, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5422510158712741757, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5422510158712741757, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5422510158712741757, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5422510158712741757, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5002708837652393727, guid: f046ea8cd28638c4e8e81af9780deff5,
@@ -2618,24 +2577,8 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 174165875720784880, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1.6500244
-      objectReference: {fileID: 0}
-    - target: {fileID: 174165875720784880, guid: f046ea8cd28638c4e8e81af9780deff5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -9.749023
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f046ea8cd28638c4e8e81af9780deff5, type: 3}
---- !u!95 &926890725 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8392893895426519623, guid: f046ea8cd28638c4e8e81af9780deff5,
-    type: 3}
-  m_PrefabInstance: {fileID: 926890723}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &963510768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3076,40 +3019,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b3a946011abcf6409b27c0a64821ab6, type: 3}
---- !u!1 &1132340419 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3218057910197382446, guid: f046ea8cd28638c4e8e81af9780deff5,
-    type: 3}
-  m_PrefabInstance: {fileID: 926890723}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1132340420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132340419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef2501eef6b2999419c351941aaa2b52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canCollectFromMao: 0
-  animation: {fileID: 926890725}
-  droidBringMeUi: {fileID: 504822636}
---- !u!65 &1132340421
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132340419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1176202677
 PrefabInstance:
   m_ObjectHideFlags: 0
