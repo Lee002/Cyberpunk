@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class IntroManager : MonoBehaviour
 {
     public AudioSource droidVoice1;
     public List<AudioClip> droidVoices = new List<AudioClip>();
+    public NavMeshAgent agent;
+    public Transform pos;
     public void StartAudio()
     {
         droidVoice1.Play();
@@ -30,8 +32,15 @@ public class IntroManager : MonoBehaviour
         droidVoice1.clip = droidVoices[2];
         droidVoice1.Play();
     }
+
+    void SetPosition()
+    {
+        agent.destination = pos.position;
+    }
     void Start()
     {
+        SetPosition();
         Invoke("StartAudio", 14f);
+        
     }
 }
