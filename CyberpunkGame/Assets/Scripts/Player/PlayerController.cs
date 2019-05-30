@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     {
         distance = Vector3.Distance(transform.position, selectedCivilian.transform.position);
 
-        if (distance <= 4f)
+        if (distance <= 2f)
         {
             player_data.State = State.Harvesting;
             transform.LookAt(selectedCivilian.transform);
