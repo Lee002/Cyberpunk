@@ -8,13 +8,24 @@ public class DroidController : MonoBehaviour
     private GameManager manager;
     [SerializeField] private Animator animation;
     [SerializeField] private GameObject droidBringMeUi;
+    [SerializeField] List<AudioClip> sfxs;
+    [SerializeField] private float timer = 3f;
+    private float time;
+    [SerializeField] private AudioSource source;
     void Start()
     {
         manager = GameManager.instance;
+        time = timer;
     }
 
     void Update()
     {
+
+        time -= Time.deltaTime;
+        if(time <= 0)
+        {
+            PlaySoundEffect();
+        }
         if(manager.neededMaterials.value == manager.harvestedMaterials.value)
         {
             canCollectFromMao = true;
@@ -34,6 +45,13 @@ public class DroidController : MonoBehaviour
             droidBringMeUi.SetActive(false);
 
         }
+    }
+    void PlaySoundEffect()
+    {
+        int random = Random.Range(0, sfxs.Count);
+        source.clip = sfxs[random];
+        source.Play();
+        time = timer;
     }
     void WaitForMao()
     {

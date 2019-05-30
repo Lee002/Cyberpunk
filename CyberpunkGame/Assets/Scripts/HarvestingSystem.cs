@@ -20,7 +20,7 @@ public class HarvestingSystem : MonoBehaviour
         PlayerController.instance.animator.SetBool("isHarvesting", true);
         civilian.GetComponentInChildren<ProressBar>().rProgressBar.SetActive(true);
         harvestingnotification.SetActive(true);
-        
+        PlayerController.instance.transform.GetComponent<AudioSource>().Play();
         GameManager.instance.harvestedMaterials.value += 25f;
         yield return new WaitForSeconds(harvestingTimer);
         Debug.Log("You have harvested a civilian" + civilian.name);
