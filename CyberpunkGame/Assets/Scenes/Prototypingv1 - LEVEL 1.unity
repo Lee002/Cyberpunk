@@ -6478,6 +6478,37 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6758405952984211611, guid: 8cf457cd64e4b6a4aa54aaf9d4687a05,
+        type: 3}
+      propertyPath: m_text
+      value: 'Here are your first targets.
+
+        Just get closer and smash their
+
+        heads in! We can fix your leg in
+
+        exchange for valuable organs!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758405952984211611, guid: 8cf457cd64e4b6a4aa54aaf9d4687a05,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758405952984211611, guid: 8cf457cd64e4b6a4aa54aaf9d4687a05,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758405952984211611, guid: 8cf457cd64e4b6a4aa54aaf9d4687a05,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758405952984211611, guid: 8cf457cd64e4b6a4aa54aaf9d4687a05,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf457cd64e4b6a4aa54aaf9d4687a05, type: 3}
 --- !u!1001 &6787602696454234295
@@ -6792,6 +6823,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Objc/Skill
       objectReference: {fileID: 0}
+    - target: {fileID: 7184473851635641929, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_text
+      value: "Objective:\n\tHarvest civilians' organs"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184473851635641929, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 37
+      objectReference: {fileID: 0}
     - target: {fileID: 7184473851228582448, guid: 402e35b60d9a02f49b3aa507d7262961,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6896,6 +6937,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184473850932508394, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_text
+      value: 'Reward:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184473850932508394, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184473850932508394, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184473850932508394, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184473850941122089, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_text
+      value: Leg upgrade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184473850941122089, guid: 402e35b60d9a02f49b3aa507d7262961,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 402e35b60d9a02f49b3aa507d7262961, type: 3}
