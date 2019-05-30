@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            Debug.Log(GetPositionUnderCursor());
             agent.destination = GetPositionUnderCursor();
             transform.LookAt(GetPositionUnderCursor());
         }
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
             player_data.State = State.Idle;
             animator.SetFloat("Speed", agent.remainingDistance);
             animator.SetBool("walking", reachedPosition);
-            agent.SetDestination(transform.position);
+            //agent.SetDestination(transform.position);
         }
         else
         {
