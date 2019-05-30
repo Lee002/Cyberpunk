@@ -31,6 +31,8 @@ public class Soldier : MonoBehaviour
 
     private bool patrol = true;
 
+    private CloakAbilitity ability;
+
     protected void Awake()
     {
       
@@ -39,9 +41,12 @@ public class Soldier : MonoBehaviour
         //_animator = GetComponent<Animator>();
 
         MoveToNextPatrolPoint();
-
+        
     }
-
+    void Start()
+    {
+        ability = PlayerController.instance.GetComponent<CloakAbilitity>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -100,7 +105,7 @@ public class Soldier : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player" && !ability.playerHidden)
         {
             patrol = false;
             _navMeshAgent.destination = transform.position;

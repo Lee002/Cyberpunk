@@ -24,9 +24,11 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 neededMaterials.value = 50f;
+
                 break;
             case 2:
                 neededMaterials.value = 100f;
+                FindObjectOfType<AudioManager>().Play("Level2");
                 break;
 
             default:
