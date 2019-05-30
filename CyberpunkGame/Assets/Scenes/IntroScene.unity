@@ -1130,8 +1130,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 53de03cd453d7d74c93856665c2b9043, type: 3}
   - {fileID: 8300000, guid: fe3de0d2e1e5a8440905d4d467d1da3e, type: 3}
   - {fileID: 8300000, guid: b1c2d4ed9f0137c4388c844a964c65a3, type: 3}
-  agent: {fileID: 0}
-  pos: {x: 0, y: 0, z: 0}
+  agent: {fileID: 1378089061}
+  pos: {fileID: 1787092344}
 --- !u!4 &1157549603
 Transform:
   m_ObjectHideFlags: 0
@@ -6595,6 +6595,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8392893895426519623, guid: f046ea8cd28638c4e8e81af9780deff5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c8bc8d121b59e624789e86e6f2015748, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f046ea8cd28638c4e8e81af9780deff5, type: 3}
 --- !u!1001 &7292052083502203183

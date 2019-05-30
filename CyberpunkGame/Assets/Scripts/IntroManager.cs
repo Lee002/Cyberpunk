@@ -5,12 +5,14 @@ using UnityEngine.AI;
 public class IntroManager : MonoBehaviour
 {
     public AudioSource droidVoice1;
+    public Animator droid;
     public List<AudioClip> droidVoices = new List<AudioClip>();
     public NavMeshAgent agent;
     public Transform pos;
     public void StartAudio()
     {
         droidVoice1.Play();
+        droid.SetBool("talking", true);
         Invoke("StartAudio2", 7f);
     }
     void StartAudio2()
