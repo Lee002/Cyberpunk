@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class NextScene  {
+public class NextScene : MonoBehaviour {
 
     public Animator fadeAnimator;
 
