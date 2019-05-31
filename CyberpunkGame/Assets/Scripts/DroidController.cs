@@ -13,6 +13,7 @@ public class DroidController : MonoBehaviour
     private float time;
     [SerializeField] private AudioSource source;
     [SerializeField] private TextMeshProUGUI objective;
+    public GameObject finale;
     void Start()
     {
         manager = GameManager.instance;
@@ -36,6 +37,7 @@ public class DroidController : MonoBehaviour
         if(canCollectFromMao)
         {
             animation.SetBool("canCollect", true);
+            FindObjectOfType<AudioManager>().Play("DroidBringOrgans");
             droidBringMeUi.SetActive(true);
             objective.fontStyle = FontStyles.Strikethrough;
             WaitForMao();
@@ -61,14 +63,22 @@ public class DroidController : MonoBehaviour
         float dis = Vector3.Distance(transform.position, PlayerController.instance.transform.position);
         if (Physics.Raycast(ray, out hit)) 
         {
-            
-            if(hit.transform.tag == "Droid" && dis <= 2f)
+            if(GameManager.instance.currLevel < 4)
             {
-                TextMeshProUGUI text = droidBringMeUi.GetComponent<TextMeshProUGUI>();
-                text.text = "You did very well! You still have a long way to go!";
-                NextScene next = new NextScene();
-                StartCoroutine(next.LoadSceneNextAfterTime());
+                if (hit.transform.tag == "Droid" && dis <= 2f)
+                {
+                    TextMeshProUGUI text = droidBringMeUi.GetComponent<TextMeshProUGUI>();
+                    text.text = "You did very well! You still have a long way to go!";
+                    FindObjectOfType<AudioManager>().Play("DroidGoodJob");
+                    NextScene next = new NextScene();
+                    StartCoroutine(next.LoadSceneNextAfterTime());
+                }
             }
+            else
+            {
+                finale.SetActive(true);
+            }
+
         }
     }
 }

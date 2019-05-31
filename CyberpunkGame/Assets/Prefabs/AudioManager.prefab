@@ -68,3 +68,15 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - clip: {fileID: 8300000, guid: 98ae12a156279474dae08764478df98a, type: 3}
+    name: DroidBringOrgans
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 55caeff3226191343854d105b68f01e2, type: 3}
+    name: DroidGoodJob
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
