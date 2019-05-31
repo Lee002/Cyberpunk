@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class CloakAbilitity : MonoBehaviour
 {
     private bool isCloaked = false;
@@ -16,7 +16,8 @@ public class CloakAbilitity : MonoBehaviour
     [SerializeField] private SkinnedMeshRenderer material;
     [SerializeField] private Material normalShaderMaterial;
     [SerializeField] private Material cloakShaderMaterial;
-
+    [SerializeField] private Image cloakEffect;
+    [SerializeField] private GameObject recharging;
     public bool abilityInstalled = false;
     // Start is called before the first frame update
     void Start()
@@ -39,9 +40,11 @@ public class CloakAbilitity : MonoBehaviour
             {
                 WearCloak();
                 timer -= Time.deltaTime;
+                cloakEffect.fillAmount = timer / cloakTimer;
                 if (timer <= 0)
                 {
                     timer = cloakTimer;
+                    
                     RemoveCloak();
 
                     isCloaked = false;
@@ -50,8 +53,14 @@ public class CloakAbilitity : MonoBehaviour
 
             if (rechargingCloak)
             {
+                recharging.SetActive(true);
                 RechargeCloak();
             }
+            else
+            {
+                recharging.SetActive(false);
+            }
+
         }
 
     }
@@ -66,9 +75,12 @@ public class CloakAbilitity : MonoBehaviour
     void RechargeCloak()
     {
         rechargeTimer -= Time.deltaTime;
-        if(rechargeTimer <= 0)
+
+        cloakEffect.fillAmount += Time.deltaTime / cloakRechargeTimer;
+        if (rechargeTimer <= 0)
         {
             rechargingCloak = false;
+
             rechargeTimer = cloakRechargeTimer;
         }
     }
