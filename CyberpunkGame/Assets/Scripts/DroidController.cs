@@ -9,6 +9,10 @@ public class DroidController : MonoBehaviour
     [SerializeField] private Animator animation;
     [SerializeField] private GameObject droidBringMeUi;
     [SerializeField] List<AudioClip> sfxs;
+
+    [SerializeField] private AudioClip goodjob;
+
+    [SerializeField] private AudioClip bringmeOrgans;
     [SerializeField] private float timer = 3f;
     private float time;
     [SerializeField] private AudioSource source;
@@ -23,21 +27,14 @@ public class DroidController : MonoBehaviour
     void Update()
     {
 
-        time -= Time.deltaTime;
-        if(time <= 0)
-        {
-            PlaySoundEffect();
-        }
-        if(manager.neededMaterials.value == manager.harvestedMaterials.value)
-        {
-            canCollectFromMao = true;
-        }
+
 
         
         if(canCollectFromMao)
         {
             animation.SetBool("canCollect", true);
-            FindObjectOfType<AudioManager>().Play("DroidBringOrgans");
+            source.clip = bringmeOrgans;
+            source.Play();
             droidBringMeUi.SetActive(true);
             objective.fontStyle = FontStyles.Strikethrough;
             WaitForMao();
@@ -46,7 +43,15 @@ public class DroidController : MonoBehaviour
         {
             animation.SetBool("canCollect", false);
             droidBringMeUi.SetActive(false);
-
+            time -= Time.deltaTime;
+            if (time <= 0)
+            {
+                PlaySoundEffect();
+            }
+            if (manager.neededMaterials.value == manager.harvestedMaterials.value)
+            {
+                canCollectFromMao = true;
+            }
         }
     }
     void PlaySoundEffect()
@@ -69,7 +74,8 @@ public class DroidController : MonoBehaviour
                 {
                     TextMeshProUGUI text = droidBringMeUi.GetComponent<TextMeshProUGUI>();
                     text.text = "You did very well! You still have a long way to go!";
-                    FindObjectOfType<AudioManager>().Play("DroidGoodJob");
+                    source.clip = goodjob;
+                    source.Play();
                     NextScene next = new NextScene();
                     StartCoroutine(next.LoadSceneNextAfterTime());
                 }

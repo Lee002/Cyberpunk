@@ -2557,6 +2557,14 @@ PrefabInstance:
       propertyPath: objective
       value: 
       objectReference: {fileID: 2143531807}
+    - target: {fileID: 1132340420, guid: f046ea8cd28638c4e8e81af9780deff5, type: 3}
+      propertyPath: goodjob
+      value: 
+      objectReference: {fileID: 8300000, guid: 55caeff3226191343854d105b68f01e2, type: 3}
+    - target: {fileID: 1132340420, guid: f046ea8cd28638c4e8e81af9780deff5, type: 3}
+      propertyPath: bringmeOrgans
+      value: 
+      objectReference: {fileID: 8300000, guid: 98ae12a156279474dae08764478df98a, type: 3}
     - target: {fileID: 1946189116078641676, guid: f046ea8cd28638c4e8e81af9780deff5,
         type: 3}
       propertyPath: m_IsActive
