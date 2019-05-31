@@ -550,7 +550,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Bring me those organs!
+  m_text: Bring the organs to me!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f686dfea66dcca44ba2382f9b7a8989f, type: 2}
   m_sharedMaterial: {fileID: -3726218593181680150, guid: f686dfea66dcca44ba2382f9b7a8989f,
@@ -631,7 +631,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 5002708837652393727}
@@ -779,6 +779,7 @@ GameObject:
   - component: {fileID: 1132340421}
   - component: {fileID: 1132340420}
   - component: {fileID: 926890725}
+  - component: {fileID: 3138585632886930689}
   m_Layer: 0
   m_Name: sm_droid
   m_TagString: Droid
@@ -863,9 +864,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c9c94a6f0fc3b2744a851224074e2004, type: 3}
   - {fileID: 8300000, guid: 859de4af0a8db32408f4953a37a3b9bd, type: 3}
   - {fileID: 8300000, guid: c6a4fa761aa458246a51f33417d9397f, type: 3}
+  goodjob: {fileID: 8300000, guid: 55caeff3226191343854d105b68f01e2, type: 3}
+  bringmeOrgans: {fileID: 8300000, guid: 98ae12a156279474dae08764478df98a, type: 3}
   timer: 3
   source: {fileID: 926890725}
+  source2: {fileID: 3138585632886930689}
   objective: {fileID: 0}
+  finale: {fileID: 0}
 --- !u!82 &926890725
 AudioSource:
   m_ObjectHideFlags: 0
@@ -932,6 +937,102 @@ AudioSource:
     - serializedVersion: 3
       time: 0.11814354
       value: 1.0000801
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &3138585632886930689
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218057910197382446}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

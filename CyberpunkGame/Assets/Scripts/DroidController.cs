@@ -16,8 +16,13 @@ public class DroidController : MonoBehaviour
     [SerializeField] private float timer = 3f;
     private float time;
     [SerializeField] private AudioSource source;
+    [SerializeField] private AudioSource source2;
     [SerializeField] private TextMeshProUGUI objective;
     public GameObject finale;
+
+    private bool bringmeorgansplayed = false;
+    private bool goodjobplayed = false;
+
     void Start()
     {
         manager = GameManager.instance;
@@ -32,9 +37,14 @@ public class DroidController : MonoBehaviour
         
         if(canCollectFromMao)
         {
+            Debug.Log("PLAYING BRING ME ORGANS");
             animation.SetBool("canCollect", true);
-            source.clip = bringmeOrgans;
-            source.Play();
+            if (!bringmeorgansplayed)
+            {
+                source2.clip = bringmeOrgans;
+                source2.Play();
+                bringmeorgansplayed = true;
+            }
             droidBringMeUi.SetActive(true);
             objective.fontStyle = FontStyles.Strikethrough;
             WaitForMao();
@@ -46,6 +56,7 @@ public class DroidController : MonoBehaviour
             time -= Time.deltaTime;
             if (time <= 0)
             {
+                Debug.Log("PLAYING SOUND");
                 PlaySoundEffect();
             }
             if (manager.neededMaterials.value == manager.harvestedMaterials.value)
@@ -73,9 +84,13 @@ public class DroidController : MonoBehaviour
                 if (hit.transform.tag == "Droid" && dis <= 2f)
                 {
                     TextMeshProUGUI text = droidBringMeUi.GetComponent<TextMeshProUGUI>();
-                    text.text = "You did very well! You still have a long way to go!";
-                    source.clip = goodjob;
-                    source.Play();
+                    text.text = "Good job! But there's still more work to be done!";
+                    if (!goodjobplayed)
+                    {
+                        source2.clip = goodjob;
+                        source2.Play();
+                        goodjobplayed = true;
+                    }
                     NextScene next = new NextScene();
                     StartCoroutine(next.LoadSceneNextAfterTime());
                 }
