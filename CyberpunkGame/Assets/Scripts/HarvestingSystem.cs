@@ -23,14 +23,17 @@ public class HarvestingSystem : MonoBehaviour
         PlayerController.instance.transform.GetComponent<AudioSource>().Play();
         GameManager.instance.harvestedMaterials.value += 25f;
         civilian.PlayRandomAudioSFX();
-
+        civilian.GetComponent<BoxCollider>().enabled = false;
         yield return new WaitForSeconds(harvestingTimer);
+
         Debug.Log("You have harvested a civilian" + civilian.name);
         Destroy(civilian.gameObject, 4f);
         PlayerController.instance.animator.SetBool("isHarvesting", false);
         NotificationController.instance.startedHarvesting = false;
         civilian.GetComponentInChildren<ProressBar>().rProgressBar.SetActive(false);
+        PlayerController.instance.playerIsHarvesting = false;
         harvestingnotification.SetActive(false);
+
 
     }
 

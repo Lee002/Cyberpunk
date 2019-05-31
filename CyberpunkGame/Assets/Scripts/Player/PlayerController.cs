@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     private HarvestingSystem harvesting;
     public float curSpeed;
     float distance;
-
+    public bool playerIsHarvesting = false;
     void Start()
     {
         playerMovements = GetComponent<PlayerMovements>();
@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
         if (distance <= 2f)
         {
+
             player_data.State = State.Harvesting;
             transform.LookAt(selectedCivilian.transform);
             NotificationController.instance.startedHarvesting = true;
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) )
         {
             Debug.Log(GetPositionUnderCursor());
             agent.destination = GetPositionUnderCursor();
