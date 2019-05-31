@@ -34,6 +34,7 @@ public class CloakAbilitity : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.H) && !rechargingCloak)
             {
                 isCloaked = true;
+                FindObjectOfType<AudioManager>().Play("cloakON");
             }
 
             if (isCloaked)
@@ -46,7 +47,7 @@ public class CloakAbilitity : MonoBehaviour
                     timer = cloakTimer;
                     
                     RemoveCloak();
-
+                    FindObjectOfType<AudioManager>().Play("cloakOFF");
                     isCloaked = false;
                 }
             }

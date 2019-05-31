@@ -2034,6 +2034,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c8427eb86ad2b6c4c9486758a905766b, type: 3}
   - {fileID: 8300000, guid: a740020bd81681d40ab623f7bf6a05d4, type: 3}
   source: {fileID: 1612976196}
+  stabbing: {fileID: 8300000, guid: 30e7f358d7d25414d9fd8d1e36d04fde, type: 3}
 --- !u!82 &1612976196
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2988,6 +2989,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: punk
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 75b59d2c03aa8ed47bc7072a066b7d89,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bff7eae28fad8094791d3a0cb0e5cf24, type: 2}
     - target: {fileID: -4216859302048453862, guid: 75b59d2c03aa8ed47bc7072a066b7d89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3098,11 +3104,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[10]
       value: 
       objectReference: {fileID: 2100000, guid: 33b916efd9e836d4b9f38ec49394a8f6, type: 2}
-    - target: {fileID: -6057140222963153312, guid: 75b59d2c03aa8ed47bc7072a066b7d89,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: bff7eae28fad8094791d3a0cb0e5cf24, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75b59d2c03aa8ed47bc7072a066b7d89, type: 3}
 --- !u!95 &3166231813130939759 stripped

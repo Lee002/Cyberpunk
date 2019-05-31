@@ -8,8 +8,9 @@ public class CivilianUnit : MonoBehaviour
     [SerializeField]private Animator animation;
     [SerializeField] public GameObject blood;
     [SerializeField] private List<AudioClip> clips;
-    [SerializeField] private AudioSource source;
-    // Start is called before the first frame update
+    [SerializeField] public AudioSource source;
+    [SerializeField] public AudioClip stabbing;
+     // Start is called before the first frame update
     void Start()
     {
         
